@@ -1,0 +1,486 @@
+<style type="text/css">
+.login-signup{
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 10px 13px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+
+
+
+}
+
+  
+</style>
+
+<header>
+  <section class="hero">
+    <div class="texture-overlay"></div>
+    <div class="container">
+      <div class="row nav-wrapper">
+        <div class="col-md-6 col-sm-6 col-xs-6 text-left">
+          <a href="#"><img src="/img/logo.png" alt="Crisp Logo"></a>
+        </div>
+
+       
+
+        <div ng-click="show_login_page=true" class="col-md-2 col-sm-3 col-xs-3 text-center navicon">
+        
+          <div class="login-signup button">Login / Signup  </div>
+        </div>
+         <div ng-click="toggleMenu()" class="col-md-3 col-sm-3 col-xs-3 text-right navicon">
+          <p>MENU</p><a id="trigger-overlay" class="nav_slide_button nav-toggle" href="#"><span></span></a>
+         
+        </div> 
+      </div>
+      <div class="row hero-content">
+        <div class="col-md-12">
+          <h1 class="animated fadeInDown text-center">Restaurants Just Got An Upgrade<img src="/img/donut.gif"/></h1>
+          <div class="text-center">
+            <a href="#about" class="learn-btn animated fadeInUp">Show<i class="fa fa-arrow-down"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</header>
+<section class="video" id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 text-center">
+        <h1><a href="https://www.youtube.com/watch?v=9Z2mr6pd3eo" class="youtube-media"><i
+          class="fa fa-play-circle-o"></i> See The Video</a></h1>
+      </div>
+      <div class="col-md-12 col-sm-12 text-center mobile-device">
+        <div class="mobile-img wp3 ">
+          <img src="/img/iphone-skeleton.png" class="mobile-photo">
+          <div class="device-content">
+            <div class="showcase-slider">
+              <div class="sketchfab-embed-wrapper">
+                <iframe width="210" height="372" src="https://sketchfab.com/models/35ebcb16e2474876a76e271640cc01e3/embed?autospin=0.2&amp;autostart=1" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
+                <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+                  <a href="https://sketchfab.com/models/35ebcb16e2474876a76e271640cc01e3?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Backyard Barbeque Pizza</a> by <a href="https://sketchfab.com/proghackers8?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">proghackers8</a> on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- <app-restaurant></app-restaurant> -->
+<section class="showcase">
+  <div class="showcase-wrap">
+    <div class="texture-overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-6 desktop-view">
+          <div class="device wp3">
+            <div class="device-content">
+              <div class="showcase-slider">
+                <div class="sketchfab-embed-wrapper">
+                  <iframe width="245" height="445" src="https://sketchfab.com/models/35ebcb16e2474876a76e271640cc01e3/embed?autospin=0.2&amp;autostart=1" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe>
+                  <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+                    <a href="https://sketchfab.com/models/35ebcb16e2474876a76e271640cc01e3?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Backyard Barbeque Pizza</a> by <a href="https://sketchfab.com/proghackers8?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">proghackers8</a> on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <h1>See AR Dishes</h1>
+          <p>Crispar Makes Your Dishes Appear Right In Front Of You</p>
+          <h1>Dish Level Richness</h1>
+          <p>Each Dish Is An Act Of Love.See them Upclose.</p>
+          <h1>Showcase Your Best</h1>
+          <p>Make Your Tongue Tingle with Visual Storytelling. </p>
+          <blockquote class="team-quote">
+            <div class="avatar"><img src="/img/avatar.png" alt="User Avatar"></div>
+            <p>"What The F*** Just Happened On My Restaurant Table?"</p>
+            <div class="logo-quote">
+            </div>
+          </blockquote>
+          <!--<a href="#features" class="learn-btn animated fadeInUp">More Magic<i class="fa fa-arrow-down"></i></a>-->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="features-list" id="features">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="col-md-4 feature-1 wp2">
+          <div class="feature-icon">
+            <i class="fa fa-desktop"></i>
+          </div>
+          <div class="feature-content">
+            <h1>Know Thy Customer</h1>
+            <p>Dish Level Engagement Means You Know What Customers Love.</p>
+          </div>
+        </div>
+        <div class="col-md-4 feature-2 wp2 delay-05s">
+          <div class="feature-icon">
+            <i class="fa fa-flash"></i>
+          </div>
+          <div class="feature-content">
+            <h1>Magical Experience</h1>
+            <p>Wow Customers. Differentiate From The Crowd.</p>
+          </div>
+        </div>
+        <div class="col-md-4 feature-3 wp2 delay-1s">
+          <div class="feature-icon">
+            <i class="fa fa-heart"></i>
+          </div>
+          <div class="feature-content">
+            <h1>Maintain Quality </h1>
+            <p>What You See Is What You Get. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--<section class="showcase">
+  <div class="showcase-wrap">
+    <div class="texture-overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <div class="device wp3">
+            <div class="device-content">
+              <div class="showcase-slider">
+                <div class="sketchfab-embed-wrapper">
+                  <iframe id="iframe2" width="247" height="445"
+                          frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"
+                          onmousewheel=""></iframe>
+
+                  <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+                    <a
+                      href="https://sketchfab.com/models/5ef4a0ebf5bd4008976f8ef88c306b3e?utm_medium=embed&utm_source=website&utm_campain=share-popup"
+                      target="_blank" style="font-weight: bold; color: #1CAAD9;">Little Turtle saying hello</a>
+                    by <a
+                    href="https://sketchfab.com/robindao?utm_medium=embed&utm_source=website&utm_campain=share-popup"
+                    target="_blank" style="font-weight: bold; color: #1CAAD9;">robindao</a>
+                    on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campain=share-popup"
+                          target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <h1>Waiters Just Got Cool (or Cute) !</h1>
+          <p>Talk To Our Artificially Intelligent Waiters</p>
+          <h1>Dish Connoisseurs</h1>
+          <p>Our Waiters Know Everything Under The Sun About Food & If Not, You Can Teach Them </p>
+          <h1>Automating Waiters</h1>
+          <p>Increase Engagement In Your Restaurant </p>
+          <blockquote class="team-quote">
+            <div class="avatar"><img src="/img/avatar.png" alt="User Avatar"></div>
+            <p>"My waiter is not only smart , it remembers my favourites too." - Gordan Ramsey</p>
+            <div class="logo-quote">
+              <a href=""><!--<img src="img/codrops-logo.png" alt="Codrops Logo"></a>
+            </div>
+          </blockquote>
+          <a href="http://tympanus.net/codrops/?p=22554" class="download-btn">Download! <i class="fa fa-download"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>-->
+<section class="screenshots-intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>BON APPETIT!</h1>
+        <p>Theres too much goodness that we want to share. Lets talk !</p>
+        <p><a href="" class="arrow-btn">Call @+91-9646617007</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="download" id="download">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center wp4">
+        <h1>Seen Enough?</h1>
+        <a href="" class="download-btn">Call +91-9646617007 </a>
+        <a href="" class="download-btn">Email team@crispar.in </a>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <h1 class="footer-logo">
+          <img src="/img/logo-resize.png" alt="Footer Logo">
+        </h1>
+        <p>Artificial Intelligence and Augmented Reality Powered Cast</p>
+      </div>
+      <div class="col-md-7">
+        <ul class="footer-nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#download">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<div id="MenuOverlay" class="overlay overlay-boxify">
+  <nav>
+    <ul>
+      <li ng-click="toggleMenu()"><a href="#about"><i class="fa fa-heart"></i>About</a></li>
+      <li ng-click="toggleMenu()"><a href="#features"><i class="fa fa-flash"></i>Features</a></li>
+    </ul>
+    <ul>
+      <li ng-click="toggleMenu()"><a href="#download"><i class="fa fa-download"></i>Contact</a></li>
+    </ul>
+  </nav>
+</div>
+
+<style>
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+*:focus {
+  outline: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #DDD;
+  font-size: 16px;
+  color: #222;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+#login-box {
+  position: relative;
+  margin: 5% auto;
+  width: 600px;
+  height: 400px;
+  background: #FFF;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 300px;
+  height: 400px;
+}
+
+h1 {
+  margin: 0 0 20px 0;
+  font-weight: 300;
+  font-size: 28px;
+}
+
+input[type="text"],
+input[type="password"] {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 4px;
+  width: 220px;
+  height: 32px;
+  border: none;
+  border-bottom: 1px solid #AAA;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-bottom: 2px solid #16a085;
+  color: #16a085;
+  transition: 0.2s ease;
+}
+
+input[type="submit"] {
+  margin-top: 28px;
+  width: 120px;
+  height: 32px;
+  background: #16a085;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.1s ease;
+  cursor: pointer;
+  display: inline-block;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  opacity: 0.8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+input[type="submit"]:active {
+  opacity: 1;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+.or {
+  position: absolute;
+  top: 180px;
+  left: 280px;
+  width: 40px;
+  height: 40px;
+  background: #DDD;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  line-height: 40px;
+  text-align: center;
+}
+
+.right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+  padding: 40px;
+  width: 300px;
+  height: 400px;
+  background: url('https://goo.gl/YbktSj');
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 2px 2px 0;
+}
+
+.right .loginwith {
+  display: block;
+  margin-bottom: 40px;
+  font-size: 28px;
+  color: #FFF;
+  text-align: center;
+}
+
+button.social-signin {
+  margin-bottom: 20px;
+  width: 220px;
+  height: 36px;
+  border: none;
+  border-radius: 2px;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  transition: 0.2s ease;
+  cursor: pointer;
+      margin-top: 65%;
+}
+
+button.social-signin:hover,
+button.social-signin:focus {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.2s ease;
+}
+
+button.social-signin:active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.2s ease;
+}
+
+button.social-signin.facebook {
+  background: #32508E;
+}
+
+button.social-signin.twitter {
+  background: #55ACEE;
+}
+
+button.social-signin.google {
+  background: #DD4B39;
+}
+.signin_button{
+  display: inline-block;
+  cursor: pointer;
+}
+.signin_butto>a:hover{
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.crossButton{
+       position: absolute;
+    top: 10px;
+    right: 17px;
+    width: 25px;
+    height: 26px;
+    z-index: 101;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+}
+.login-signup-template{
+  position: fixed;
+  width: 50%;
+  height: 50%;
+  top: 25%;
+  left: 25%;
+  z-index: 100;
+
+
+}
+.login-wrapper{
+    position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  z-index: 99;
+  background: #f1f1f1;
+  opacity: .9;
+  cursor: pointer;
+
+
+}
+</style>
+<div class="login-wrapper" ng-show="show_login_page==true" ng-click="show_login_page=false"></div>
+<div class="login-signup-template" ng-show="show_login_page==true">
+
+  <div id="login-box">
+  <div class="left">
+    <h1>Sign up</h1>
+    
+   
+    <input type="text" ng-model="loginDetails.email" name="email" placeholder="E-mail" />
+    <input type="password" ng-model="loginDetails.password" placeholder="Password" />
+    <input type="password" name="password2" ng-model="loginDetails.rePassword" placeholder="Retype password" />
+    
+    <input  type="submit"  ng-click="Signup()" name="signup_submit" value="Sign me up" />
+    <div class="signin_button" > &nbsp; or  &nbsp; <a >Sign in</a> </div>
+
+  </div>
+  
+  <div class="right">
+ 
+    
+  
+    <button class="social-signin google">Log in with Google+</button>
+  </div>
+  <div class="or">OR</div>
+
+  <div class="crossButton" ng-click="show_login_page=false">&times;</div>
+</div>
+
+  </div>

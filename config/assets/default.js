@@ -14,6 +14,7 @@ module.exports = {
       ],
       js: [
         // bower:js
+        'public/lib/sketchfab-viewer-1.1.0/index.js',
         'public/lib/angular/angular.js',
         'public/lib/angular-animate/angular-animate.js',
         'public/lib/angular-bootstrap/ui-bootstrap-tpls.js',
@@ -24,6 +25,12 @@ module.exports = {
         'public/lib/angular-ui-notification/dist/angular-ui-notification.js',
         'public/lib/angular-ui-router/release/angular-ui-router.js',
         'public/lib/owasp-password-strength-test/owasp-password-strength-test.js',
+        'public/components-font-awesome/css/fontawesome.min.css'
+        // 'https://aframe.io/releases/0.6.1/aframe.min.js',
+        // 'https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js',
+        // 'https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js',
+        // 'https://unpkg.com/aframe-animation-component@3.2.1/dist/aframe-animation-component.min.js'
+
         // endbower
       ],
       tests: ['public/lib/angular-mocks/angular-mocks.js']
