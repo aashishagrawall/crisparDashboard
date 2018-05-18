@@ -23,18 +23,19 @@
             </div>
 
             <ul class="nav">
-                <li ng-class="{active:currentView.dashboard}">
-                    <a ng-click="changeTab('dashboard')">
-                        <i class="pe-7s-graph"></i>
-                        <p>Dashboard</p>
-                    </a>
-                </li>
-                <li ng-class="{active:currentView.user}">
-                    <a ng-click="changeTab('user')" >
+            	   <li ng-class="{active:currentView.verifyRestuarant}">
+                    <a ng-click="changeTab('verifyRestuarant')" >
                         <i class="pe-7s-user"></i>
-                        <p>User Profile</p>
+                        <p>Verify Restuarant</p>
                     </a>
                 </li>
+                <li ng-class="{active:currentView.orders}">
+                    <a ng-click="changeTab('orders')">
+                        <i class="pe-7s-graph"></i>
+                        <p>Orders</p>
+                    </a>
+                </li>
+             
                 <li>
                     <a href="table.html">
                         <i class="pe-7s-note2"></i>
@@ -69,12 +70,12 @@
             </ul>
     	</div>
     </div>
-    <div ng-if="currentView.user">
+    <div ng-if="currentView.verifyRestuarant">
     <div ng-include="'/modules/dashboard/client/views/user.client.view.html'">
 
      </div> 
  </div>
-  <div ng-if="currentView.dashboard">
+  <div ng-if="currentView.orders">
 
      <div ng-include="'/modules/dashboard/client/views/dashboard.home.client.view.html'"> </div>
       </div>

@@ -25,7 +25,7 @@
 
        
 
-        <div ng-click="show_login_page=true" class="col-md-2 col-sm-3 col-xs-3 text-center navicon">
+        <div ng-click="show_login_page=true;show_signup=true" class="col-md-2 col-sm-3 col-xs-3 text-center navicon">
         
           <div class="login-signup button">Login / Signup  </div>
         </div>
@@ -456,19 +456,30 @@ button.social-signin.google {
 }
 </style>
 <div class="login-wrapper" ng-show="show_login_page==true" ng-click="show_login_page=false"></div>
-<div class="login-signup-template" ng-show="show_login_page==true">
+<div class="login-signup-template"  ng-show="show_login_page==true" >
 
   <div id="login-box">
-  <div class="left">
+  <div class="left" ng-show="show_signup==true">
     <h1>Sign up</h1>
     
    
-    <input type="text" ng-model="loginDetails.email" name="email" placeholder="E-mail" />
-    <input type="password" ng-model="loginDetails.password" placeholder="Password" />
-    <input type="password" name="password2" ng-model="loginDetails.rePassword" placeholder="Retype password" />
+    <input type="text" ng-model="signUpDetails.email" name="email" placeholder="E-mail" />
+    <input type="password" ng-model="signUpDetails.password" placeholder="Password" />
+    <input type="password" name="password2" ng-model="signUpDetails.rePassword" placeholder="Retype password" />
     
     <input  type="submit"  ng-click="Signup()" name="signup_submit" value="Sign me up" />
-    <div class="signin_button" > &nbsp; or  &nbsp; <a >Sign in</a> </div>
+    <div class="signin_button" ng-click="show_login=true;show_signup=false"  > &nbsp; or  &nbsp; <a  >Sign in</a> </div>
+
+  </div>  
+  <div class="left" ng-show="show_login==true">
+    <h1>Sign in</h1>
+    
+   
+    <input type="text" ng-model="loginDetails.usernameOrEmail" name="email" placeholder="E-mail" />
+    <input type="password" ng-model="loginDetails.password" placeholder="Password" />
+    
+    <input  type="submit"  ng-click="Signin()" name="signup_submit" value="Sign in" />
+    <div class="signin_button" ng-click="show_login=false;show_signup=true"  > &nbsp; or  &nbsp; <a >Sign up</a> </div>
 
   </div>
   

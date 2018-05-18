@@ -10,13 +10,12 @@
   function DashboardController($scope) {
 
     $scope.currentView={};
-    $scope.currentView.dashboard=true;
-    $scope.currentView.user=false;
+    $scope.currentView.verifyRestuarant=true;
+    $scope.currentView.orders=false;
 
     $scope.changeTab=function(tab){
      
-        $scope.currentView[tab]=!$scope.currentView[tab]
-
+        $scope.currentView[tab]=true;
     
 
       angular.forEach($scope.currentView,function(value,key){
